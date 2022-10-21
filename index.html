@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="index,follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Velyon</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+</head>
+<body>
+    <section id='slider'>
+        <h1>Welcome to Velyon</h1>
+        <ul class='carousel'>
+            <li class="items main-pos" id="1">
+                <div class="card">
+                    <p>Bienvenue à vous</p>
+                </div>
+            </li>
+            <li class="items right-pos" id="2">
+                <div class="card">
+                    <p>Etape 1 : Cliquez sur une station</p>
+                </div>
+            </li>
+            <li class="items back-pos" id="3">
+                <div class="card">
+                    <p>Etape 2 : Réservez un vélo</p>
+                </div>
+            </li>
+            <li class="items hide-pos" id="4">
+                <div class="card">
+                    <p>Etape 3 : Finalisez votre réservation</p>
+                </div>
+            </li>
+            <li class="items left-pos" id="5">
+                <div class="card">
+                    <p>Enjoy !</p>
+                </div>
+            </li>
+        </ul>
+        <div id='controls'>
+            <figure id='previous' class='previous'><img alt='précédent' src='images/icons/previous.svg'/></figure>
+            <figure id="next" class='next'><img alt='suivant' src='images/icons/next.svg'/></figure>
+        </div> 
+        <a href='#container'><span id='start' class='start'>Commencer</span></a>
+    </section>   
+
+    <section id='container'>
+        <div id='map-container'>
+            <figure id="setView" class='setView'></figure>
+            <div id="map"></div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="js/slider.js"></script>
+    <script src="js/formBuilder.js"></script>
+    <script src="js/map.js"></script>    
+    <script src="js/booking.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
